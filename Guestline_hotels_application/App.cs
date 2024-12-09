@@ -6,8 +6,8 @@ using Guestline_hotels_application.Validators;
 
 namespace Guestline_hotels_application
 {
-	public class App
-	{
+    public class App
+    {
         private readonly IAvailabilityService _availabilityService;
         private readonly IReadFileService _readFileService;
         private readonly ISearchService _searchService;
@@ -19,7 +19,7 @@ namespace Guestline_hotels_application
             _searchService = searchService;
         }
         public async Task RunAsync(string[] args)
-		{
+        {
             if (!InputValidator.ValidateInput(args))
             {
                 return;
@@ -48,6 +48,5 @@ namespace Guestline_hotels_application
                 }
             }
         }
-	}
+    }
 }
-
